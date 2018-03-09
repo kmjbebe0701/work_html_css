@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form 태그</title>
+</head>
+<body>
+	<!-- 
+		Form 태그
+		
+		action: 입력 데이터의 전달 위치를 지정
+		method: 입력 데이터의 전달 방식을 지정 
+	-->
+
+	<!-- 
+		board/create.do 경로에 POST 방식을 이용하여 search라는 이름으로
+		input type text에서 입력받은 내용을 전송
+	 -->
+	<form action="board/create.do" method="post">
+		<input type="text" name="search"> <input type="submit"
+			value="제출">
+	</form>
+
+	<form>
+		<input type="color"><br> <input type="date"><br>
+		<input type="datetime"><br> <input type="datetime-local"><br>
+		<input type="email"><br> <input type="month"><br>
+		<input type="number"><br> <input type="range"><br>
+		<input type="search"><br> <input type="tel"><br>
+		<input type="time"><br> <input type="url"><br>
+		<input type="week"><br> <input type="submit">
+	</form>
+
+	<!-- 
+		textatea 태그
+		rows: 태그의 높이를 지정 
+		cols: 태그의 너비를 지정
+	 -->
+	<form>
+		<textarea rows="10" cols="30"> 안녕하세요.</textarea>
+
+		<!-- 잘못된 textarea 사용법 -->
+		<textarea>
+			안녕하세요
+			안녕하세요
+		</textarea>
+
+		<!-- 올바른 textarea 사용법 -->
+		<textarea>안녕하세요 
+안녕하세요</textarea>
+
+	</form>
+
+	<!-- select 태그 -->
+	<select>
+		<option>김밥</option>
+		<option>떡볶이</option>
+		<option>라면</option>
+		<option>순대</option>
+		<option>짜장면</option>
+		<option>어묵</option>
+	</select>
+
+	<select multiple>
+		<option>김밥</option>
+		<option>떡볶이</option>
+		<option>라면</option>
+		<option>순대</option>
+		<option>짜장면</option>
+		<option>어묵</option>
+	</select>
+
+	<select>
+		<optgroup label="분식">
+			<option>김밥</option>
+			<option>떡볶이</option>
+			<option>라면</option>
+			<option>순대</option>
+			<option>어묵</option>
+		</optgroup>
+		<optgroup label="패스트 푸드">
+			<option>햄버거</option>
+			<option>피자</option>
+		</optgroup>
+	</select>
+	
+	<!-- fieldset, legend 태그 -->
+	<form>
+		<fieldset>
+			<legend>입력양식</legend>
+			<table>
+				<tr>
+					<td><label for="name">이름</label></td>
+					<td><input id="name" type="text"></td>
+				</tr>
+				<tr>
+					<td><label for="mail">이메일</label></td>
+					<td><input id="mail" type="email"></td>
+				</tr>
+				<tr>
+					<td><label for="auth">인증코드</label></td>
+					<td><input id="auth" type="number"></td>
+				</tr>
+			</table>
+			<input type="submit">
+		</fieldset>
+	
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+</html>
