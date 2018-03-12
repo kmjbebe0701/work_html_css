@@ -10,14 +10,15 @@
 	<img alt="포스터" src="img/TheAvengers2012Poster.jpg">
 	<br>
 	<form>
-		상영관 <select>
+		<label for="multiplex">상영관</label> 
+		<select id="multiplex">
 			<option>CGV</option>
 			<option>메가박스</option>
 			<option>롯데시네마</option>
-		</select> 날짜선택 <input type="date">
-	</form>
+		</select> 
+		<label for="show_date">날짜 선택</label> 
+		<input type="date" id="show_date" />
 
-	<form>
 		<fieldset>
 			<legend>시간선택</legend>
 			<input type="radio" value="08:30" name="time">08:30 
@@ -29,12 +30,9 @@
 			<input type="radio" value="26:00" name="time">26:00 
 			<input type="radio"	value="28:00" name="time">28:00
 		</fieldset>
-	</form>
-	<form size="5">
-		인원
-		<input type="number" >
-	</form>
-	<form>
+
+		<label>인원<input type="number" min="1" max="300" /></label>
+	
 		<fieldset>
 			<legend>옵션</legend>
 			<input type="checkbox" name="ot" value="popcorn">팝콘 
