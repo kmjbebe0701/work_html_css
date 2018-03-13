@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS 08 Layout Using Float</title>
+	<style>
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#wrap {
+	overflow: hidden;
+}
+
+#aside {
+	width: 200px;
+	float: left;
+}
+
+#section {
+	width: 760px;
+	float: left;
+}
+
+#header {
+	background: rgb(191, 210, 85); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(191, 210, 85, 1) 0%,
+		rgba(142, 185, 42, 1) 42%, rgba(142, 185, 42, 1) 42%,
+		rgba(114, 170, 0, 1) 62%, rgba(114, 170, 0, 1) 62%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 65%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 68%,
+		rgba(114, 170, 0, 1) 74%, rgba(158, 203, 45, 1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(191, 210, 85, 1) 0%,
+		rgba(142, 185, 42, 1) 42%, rgba(142, 185, 42, 1) 42%,
+		rgba(114, 170, 0, 1) 62%, rgba(114, 170, 0, 1) 62%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 65%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 68%,
+		rgba(114, 170, 0, 1) 74%, rgba(158, 203, 45, 1) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(191, 210, 85, 1) 0%,
+		rgba(142, 185, 42, 1) 42%, rgba(142, 185, 42, 1) 42%,
+		rgba(114, 170, 0, 1) 62%, rgba(114, 170, 0, 1) 62%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 65%,
+		rgba(114, 170, 0, 1) 65%, rgba(114, 170, 0, 1) 68%,
+		rgba(114, 170, 0, 1) 74%, rgba(158, 203, 45, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255',
+		endColorstr='#9ecb2d', GradientType=0); /* IE6-9 */
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+			<h1>헤더</h1>
+		</div>
+		<div id="navigation">
+			<h1>네비게이션</h1>
+		</div>
+		<div id="wrap">
+			<div id="aside">
+				<h1>aside</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Donec semper porttitor sodales. Donec non enim purus. Nulla
+					condimentum sem nulla, sit amet dignissim quam luctus id. Duis
+					feugiat placerat lorem. Phasellus id felis et sapien ullamcorper
+					ultrices sed in ipsum. Nulla sed neque auctor, mollis sapien in,
+					tempor odio. Etiam eu tortor augue. Quisque in orci nisl. Integer
+					hendrerit sit amet dui semper aliquet. Proin egestas, magna et
+					ornare rhoncus, libero libero eleifend lorem, sed cursus nulla nisi
+					egestas sem. Donec ut urna condimentum, accumsan nisi id,
+					scelerisque tortor. Duis ligula libero, laoreet quis magna quis,
+					porttitor interdum purus. Integer cursus at leo vitae condimentum.
+					Maecenas ante neque, commodo ac ultricies eu, convallis non elit.</p>
+			</div>
+			<div id="section">
+				<h1>section</h1>
+				<p>Sed tellus lectus, placerat sit amet risus id, sagittis
+					blandit arcu. Quisque mattis id eros et vulputate. Mauris
+					consectetur tempus tincidunt. Nulla facilisi. Donec ornare ipsum
+					sit amet risus suscipit tincidunt. Integer rutrum cursus tortor in
+					dictum. Nulla placerat justo vitae ullamcorper pellentesque. Donec
+					quam nisl, iaculis eget tortor tempus, dapibus interdum erat. Proin
+					lacus nisi, vulputate nec velit ac, luctus condimentum nibh.
+					Maecenas viverra luctus velit ut iaculis. Vestibulum quis sem
+					imperdiet ipsum rutrum ullamcorper. Sed maximus nisl eget urna
+					pharetra ultricies. Suspendisse potenti. Integer lectus augue,
+					scelerisque et suscipit ac, consequat vel lorem. Phasellus rutrum
+					leo ut tortor tempor, eu euismod justo vehicula.</p>
+			</div>
+		</div>
+		<div id="footer">
+			<h1>footer</h1>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
